@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: 561c49594bd512646ad91bcf206f3c3a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -9082789242079819192
+    second: angry_0
+  - first:
+      213: 389261486681303486
+    second: angry_1
+  - first:
+      213: -8610559014388677992
+    second: angry_2
+  - first:
+      213: -53165280371114254
+    second: angry_3
+  - first:
+      213: -1977696568214328672
+    second: angry_4
+  - first:
+      213: -6556808103968122427
+    second: angry_5
+  - first:
+      213: 1652390266406821548
+    second: angry_6
+  - first:
+      213: -8382500439332108593
+    second: angry_7
+  - first:
+      213: -6125925050734310691
+    second: angry_8
+  - first:
+      213: 1360073192294183771
+    second: angry_9
+  - first:
+      213: 1054494451362950897
+    second: angry_10
+  - first:
+      213: -5027298709059768271
+    second: angry_11
+  - first:
+      213: -1457043061124761952
+    second: angry_12
+  - first:
+      213: -8536927736385826831
+    second: angry_13
+  - first:
+      213: -4540015680907695247
+    second: angry_14
+  - first:
+      213: -4458534288952041561
+    second: angry_15
+  - first:
+      213: -1853107074300983029
+    second: angry_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: angry_0
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 1969
+        width: 359
+        height: 341
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84ac7189e4373f180800000000000000
+      internalID: -9082789242079819192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angry_1
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 1974
+        width: 431
+        height: 384
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb9216e724fe66500800000000000000
+      internalID: 389261486681303486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angry_2
+      rect:
+        serializedVersion: 2
+        x: 1033
+        y: 1969
+        width: 369
+        height: 449
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89243d57236218880800000000000000
+      internalID: -8610559014388677992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angry_3
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 1974
+        width: 219
+        height: 238
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fe781d857e134ff0800000000000000
+      internalID: -53165280371114254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angry_4
+      rect:
+        serializedVersion: 2
+        x: 1690
+        y: 1958
+        width: 437
+        height: 482
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0aa6312137fcd84e0800000000000000
+      internalID: -1977696568214328672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angry_5
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 1326
+        width: 592
+        height: 555
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c9d396d4c98105a0800000000000000
+      internalID: -6556808103968122427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angry_6
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 1329
+        width: 567
+        height: 351
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: caedd7b41387ee610800000000000000
+      internalID: 1652390266406821548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angry_7
+      rect:
+        serializedVersion: 2
+        x: 1358
+        y: 1335
+        width: 329
+        height: 251
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc6cd0843406bab80800000000000000
+      internalID: -8382500439332108593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angry_8
+      rect:
+        serializedVersion: 2
+        x: 1811
+        y: 1346
+        width: 266
+        height: 323
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dda80567f975cfaa0800000000000000
+      internalID: -6125925050734310691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angry_9
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 723
+        width: 373
+        height: 343
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b53f937cc53ffd210800000000000000
+      internalID: 1360073192294183771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angry_10
+      rect:
+        serializedVersion: 2
+        x: 663
+        y: 722
+        width: 504
+        height: 397
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1feeb17dd1152ae00800000000000000
+      internalID: 1054494451362950897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angry_11
+      rect:
+        serializedVersion: 2
+        x: 1168
+        y: 728
+        width: 487
+        height: 491
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13076bab5727b3ab0800000000000000
+      internalID: -5027298709059768271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angry_12
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 733
+        width: 277
+        height: 244
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a6f53f3e0b87cbe0800000000000000
+      internalID: -1457043061124761952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angry_13
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 127
+        width: 591
+        height: 552
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ff0b8f447db68980800000000000000
+      internalID: -8536927736385826831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angry_14
+      rect:
+        serializedVersion: 2
+        x: 853
+        y: 141
+        width: 426
+        height: 396
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17b2bc0dacf9ef0c0800000000000000
+      internalID: -4540015680907695247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angry_15
+      rect:
+        serializedVersion: 2
+        x: 1338
+        y: 138
+        width: 244
+        height: 434
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7af5d10cfaa1022c0800000000000000
+      internalID: -4458534288952041561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: angry_16
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 141
+        width: 264
+        height: 318
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b09c6812fe07846e0800000000000000
+      internalID: -1853107074300983029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: f9eb5a564f035b44c8b72779d5a8fee9
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      angry_0: -9082789242079819192
+      angry_1: 389261486681303486
+      angry_10: 1054494451362950897
+      angry_11: -5027298709059768271
+      angry_12: -1457043061124761952
+      angry_13: -8536927736385826831
+      angry_14: -4540015680907695247
+      angry_15: -4458534288952041561
+      angry_16: -1853107074300983029
+      angry_2: -8610559014388677992
+      angry_3: -53165280371114254
+      angry_4: -1977696568214328672
+      angry_5: -6556808103968122427
+      angry_6: 1652390266406821548
+      angry_7: -8382500439332108593
+      angry_8: -6125925050734310691
+      angry_9: 1360073192294183771
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
