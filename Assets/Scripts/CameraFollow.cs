@@ -11,11 +11,15 @@ public class CameraFollow : MonoBehaviour
 
     [Header("Pan Settings")]
     public float panSpeed = 5f;    // Speed when manually panning
-    private bool isDragging = false;
+    
+    [Header("Return Settings")]
+    public float returnSpeed = 4f;
+    public float returnSnapDistance = 0.05f;
 
     private Camera cam;
 
     bool canFollow = false;
+    bool isReturningToBird = false;
 
     private void Start()
     {
@@ -24,6 +28,15 @@ public class CameraFollow : MonoBehaviour
         EventManager.AddListner<OnBirdLaunched>(Instance_OnBirdLaunch);
 
         EventManager.AddListner<OnBirdLaunchFinished>(Instance_OnBirdLaunchCompleted);
+        EventManager.AddListner<OnNextBirdReady>(Instance_OnNextBirdReady);
+    }
+
+    private void Instance_OnNextBirdReady(OnNextBirdReady e)
+    {
+        target = e.Bird;
+        canFollow = false;
+        isReturningToBird = target != null;
+
     }
 
     private void Instance_OnBirdLaunchCompleted(OnBirdLaunchFinished e)
@@ -35,6 +48,7 @@ public class CameraFollow : MonoBehaviour
     {
         target = e.Bird;
         canFollow = true;
+        isReturningToBird = false;
     }
 
 
@@ -50,12 +64,24 @@ public class CameraFollow : MonoBehaviour
             desiredPos.x = Mathf.Clamp(desiredPos.x, xMin, xMax);
             transform.position = Vector3.Lerp(transform.position, desiredPos, followSpeed * Time.deltaTime);
         }
+        else if (isReturningToBird)
+        {
+            Vector3 desiredPos = new Vector3(target.position.x, target.position.y + yOffset, transform.position.z);
+            desiredPos.x = Mathf.Clamp(desiredPos.x, xMin, xMax);
+            transform.position = Vector3.Lerp(transform.position, desiredPos, returnSpeed * Time.deltaTime);
+
+            if (Vector3.Distance(transform.position, desiredPos) <= returnSnapDistance)
+            {
+                transform.position = desiredPos;
+                isReturningToBird = false;
+            }
+        }
     }
 
     private void Update()
     {
       
-        if(!canFollow)
+        if(!canFollow && !isReturningToBird)
         {
             // Bird stopped → allow manual horizontal panning
             float horizontalInput = Input.GetAxis("Horizontal"); // Arrow keys or A/D
@@ -67,5 +93,12 @@ public class CameraFollow : MonoBehaviour
                 transform.position = pos;
             }
         }
+    }
+
+    private void OnDisable()
+    {
+        EventManager.RemoveListner<OnBirdLaunched>(Instance_OnBirdLaunch);
+        EventManager.RemoveListner<OnBirdLaunchFinished>(Instance_OnBirdLaunchCompleted);
+        EventManager.RemoveListner<OnNextBirdReady>(Instance_OnNextBirdReady);
     }
 }

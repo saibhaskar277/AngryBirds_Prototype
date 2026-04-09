@@ -14,6 +14,9 @@ public class BirdsManager : MonoBehaviour
     [SerializeField]
     private List<BaseBird> birdsList = new List<BaseBird>();
 
+    [SerializeField]
+    private Transform birdSpawnPoint;
+
 
     public event Action OnBirdLaunch;
 
@@ -35,7 +38,18 @@ public class BirdsManager : MonoBehaviour
 
     private void Start()
     {
-        pos = currentBird.transform.position;
+        if (currentBird == null && birdsList.Count > 0)
+        {
+            currentBird = birdsList[0];
+            currentBirdIndex = 0;
+        }
+
+        if (currentBird != null)
+        {
+            MoveBirdToSpawnPoint(currentBird);
+            EventManager.RaiseEvent(new OnNextBirdReady(currentBird.transform));
+        }
+
         InputHandler.instance.OnDragDirection += Instance_OnDragDirection;
         InputHandler.instance.OnDragRelease += Instance_OnDragRelease;
 
@@ -51,6 +65,9 @@ public class BirdsManager : MonoBehaviour
 
     private void Instance_OnDragRelease()
     {
+        if (currentBird == null)
+            return;
+
         if (!isBirdLaunched)
         {
 
@@ -76,7 +93,7 @@ public class BirdsManager : MonoBehaviour
 
     private void Instance_OnDragDirection(Vector2 obj)
     {
-        if (isBirdLaunched)
+        if (isBirdLaunched || currentBird == null)
             return;
 
         launchDirection = obj;
@@ -102,14 +119,39 @@ public class BirdsManager : MonoBehaviour
     {
         canUseAbility = false;
         currentBirdIndex++;
+
+        if (currentBirdIndex >= birdsList.Count)
+        {
+            currentBird = null;
+            return;
+        }
+
         currentBird = birdsList[currentBirdIndex];
         currentBird.gameObject.SetActive(true);
+        MoveBirdToSpawnPoint(currentBird);
+        EventManager.RaiseEvent(new OnNextBirdReady(currentBird.transform));
+    }
+
+    private void MoveBirdToSpawnPoint(BaseBird bird)
+    {
+        if (birdSpawnPoint != null)
+        {
+            bird.transform.position = birdSpawnPoint.position;
+        }
+
+        bird.ResetBird();
+        pos = bird.transform.position;
     }
 
 
     private void OnDisable()
     {
-        InputHandler.instance.OnDragDirection -= Instance_OnDragDirection;
-        InputHandler.instance.OnDragRelease -= Instance_OnDragRelease;
+        if (InputHandler.instance != null)
+        {
+            InputHandler.instance.OnDragDirection -= Instance_OnDragDirection;
+            InputHandler.instance.OnDragRelease -= Instance_OnDragRelease;
+        }
+
+        EventManager.RemoveListner<OnBirdLaunchFinished>(OnBirdLaunchFinishedListner);
     }
 }

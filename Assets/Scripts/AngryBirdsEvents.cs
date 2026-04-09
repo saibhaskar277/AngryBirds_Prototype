@@ -20,3 +20,13 @@ public class OnBirdLaunched : IGameEvent
     }
 }
 
+public class OnNextBirdReady : IGameEvent
+{
+    public Transform Bird;
+
+    public OnNextBirdReady(Transform bird)
+    {
+        Bird = bird;
+    }
+}
+
