@@ -141,11 +141,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6367226764294688381, guid: 66f9147b209d3e247993265a4f4db4a2, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.12
+      value: -4.66
       objectReference: {fileID: 0}
     - target: {fileID: 6367226764294688381, guid: 66f9147b209d3e247993265a4f4db4a2, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.1
+      value: -1.83
       objectReference: {fileID: 0}
     - target: {fileID: 6367226764294688381, guid: 66f9147b209d3e247993265a4f4db4a2, type: 3}
       propertyPath: m_LocalPosition.z
@@ -259,11 +259,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6650393017604719546, guid: 18dcbaedfb9d2c343b684f26dfe36204, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.61
+      value: -5.98
       objectReference: {fileID: 0}
     - target: {fileID: 6650393017604719546, guid: 18dcbaedfb9d2c343b684f26dfe36204, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.88
+      value: -3.15
       objectReference: {fileID: 0}
     - target: {fileID: 6650393017604719546, guid: 18dcbaedfb9d2c343b684f26dfe36204, type: 3}
       propertyPath: m_LocalPosition.z
@@ -923,13 +923,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94a31d13ecb3b274e849427d8e583cfd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentBird: {fileID: 188075396}
+  currentBird: {fileID: 30398354}
   birdsList:
+  - {fileID: 30398354}
   - {fileID: 188075396}
   - {fileID: 1789762379}
   - {fileID: 635597425}
   - {fileID: 1184503270}
-  - {fileID: 30398354}
   birdSpawnPoint: {fileID: 1585091205}
   isBirdLaunched: 0
 --- !u!4 &1119563977
@@ -1676,9 +1676,9 @@ SceneRoots:
   - {fileID: 233047175020443099}
   - {fileID: 1966422085}
   - {fileID: 693160781}
+  - {fileID: 30398353}
   - {fileID: 188075395}
   - {fileID: 1789762378}
   - {fileID: 635597424}
   - {fileID: 1184503269}
-  - {fileID: 30398353}
   - {fileID: 1585091205}
