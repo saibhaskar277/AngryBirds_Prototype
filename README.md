@@ -86,12 +86,6 @@ Expect frequent updates as systems evolve.
 
 ---
 
-## 📷 Preview
-
-> Screenshots and gameplay GIFs will be added soon.
-
----
-
 ## 🤝 Contributions
 
 Feedback, architecture suggestions, and gameplay ideas are welcome while the project is still in development.
