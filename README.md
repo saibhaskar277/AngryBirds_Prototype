@@ -2,7 +2,7 @@
 
 A **2D physics-based Angry Birds style game** built in **Unity 6** using **Rigidbody2D**, custom **slingshot mechanics**, destructible structures, TNT interactions, and bird ability architecture.
 
-> 🚧 **Project Status: In Development** Need to create levels core gamePlay logic is ready
+> 🚧 **Project Status: In Development** 
 
 ## 🎥 Gameplay Demo
 [![Watch Demo](demo/AngryBird.png)](demo/Angrybird.mp4)
